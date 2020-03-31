@@ -1,0 +1,16 @@
+PODS:
+  - XBackgroundManager (0.1.0)
+
+DEPENDENCIES:
+  - XBackgroundManager (from `../`)
+
+EXTERNAL SOURCES:
+  XBackgroundManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  XBackgroundManager: ae1f0049690cdb5859c442895364391c25d59363
+
+PODFILE CHECKSUM: c93beea375586d39c4d4fab27dce6ab9d3347a02
+
+COCOAPODS: 1.9.1

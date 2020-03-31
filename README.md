@@ -5,6 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/XBackgroundManager.svg?style=flat)](https://cocoapods.org/pods/XBackgroundManager)
 [![Platform](https://img.shields.io/cocoapods/p/XBackgroundManager.svg?style=flat)](https://cocoapods.org/pods/XBackgroundManager)
 
+## 描述
+利用 CLLocation 定位实现 App 在进入后台后长久存活
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
