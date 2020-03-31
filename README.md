@@ -1,5 +1,5 @@
 # XBackgroundManager
-[![License](http://img.shields.io/badge/license-MIT-9cf)](https://cocoapods.org/pods/XBackgroundManager)
+[![License](https://img.shields.io/badge/license-MIT-9cf)](https://cocoapods.org/pods/XBackgroundManager)
 [![Platform](https://img.shields.io/badge/platform-iOS-green)](https://cocoapods.org/pods/XBackgroundManager)
 
 
