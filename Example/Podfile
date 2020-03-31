@@ -5,9 +5,4 @@ use_frameworks!
 target 'XBackgroundManager_Example' do
   pod 'XBackgroundManager', :path => '../'
 
-  target 'XBackgroundManager_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end
