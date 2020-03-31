@@ -1,9 +1,7 @@
 # XBackgroundManager
+[![License](http://img.shields.io/badge/license-MIT-9cf)](https://cocoapods.org/pods/XBackgroundManager)
+[![Platform](https://img.shields.io/badge/platform-iOS-green)](https://cocoapods.org/pods/XBackgroundManager)
 
-[![CI Status](https://img.shields.io/travis/dte2mdj/XBackgroundManager.svg?style=flat)](https://travis-ci.org/dte2mdj/XBackgroundManager)
-[![Version](https://img.shields.io/cocoapods/v/XBackgroundManager.svg?style=flat)](https://cocoapods.org/pods/XBackgroundManager)
-[![License](https://img.shields.io/cocoapods/l/XBackgroundManager.svg?style=flat)](https://cocoapods.org/pods/XBackgroundManager)
-[![Platform](https://img.shields.io/cocoapods/p/XBackgroundManager.svg?style=flat)](https://cocoapods.org/pods/XBackgroundManager)
 
 ## 描述
 利用 CLLocation 定位实现 App 在进入后台后长久存活
