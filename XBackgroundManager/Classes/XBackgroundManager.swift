@@ -133,20 +133,7 @@ private extension XBackgroundManager {
             mgr.requestAlwaysAuthorization()
             mgr.requestWhenInUseAuthorization()
         }
-        
-        if #available(iOS 9.0, *) {
-            /*
-            allowsBackgroundLocationUpdates：是否允许后台定位，默认为NO，只在iOS9.0之后起作用。
-            设为YES时，必须保证Background Modes 中的Location updates处于选中状态，否则会抛出异常。
-            在用户选择仅在使用应用期间获取位置权限的情况下，当应用进入后台，手机桌面顶部是否出现蓝条，这句代码起着关键性作用。
-            首先，这句代码仅在requestWhenInUseAuthorization状态下才起作用，否则不起作用。
-            当设为YES，就是允许在requestWhenInUseAuthorization此状态下，即使App进入后台，但是没杀死，那么就依然可以后台定位。
-            并且顶部给个蓝条闪烁，目的是在于实时提醒用户：你这个App一直在获取你的位置信息哟，如果你感到不需要继续获取了，就杀死该App吧！所以一直蓝条闪烁。
-            当设置为NO，就是在requestWhenInUseAuthorization状态下，App进入后台，立即停止后台定位。
-            */
-            mgr.allowsBackgroundLocationUpdates = true
-        }
-        
+    
         return mgr
     }
     /// 增加 app 生命周期通知监听
@@ -200,6 +187,9 @@ extension XBackgroundManager: CLLocationManagerDelegate {
             log("用户拒绝")
         case .authorizedAlways:
             log("前后台均可使用")
+            // authorizedAlways 如果不开启，iPhone 8 Plus 测试无法一直保持在后台
+            // authorizedWhenInUse 如果开启，iPhone 6s 测试会出现蓝条
+            if #available(iOS 9.0, *) { manager.allowsBackgroundLocationUpdates = true }
         case .authorizedWhenInUse:
             log("前台可用")
         @unknown default:
@@ -225,7 +215,7 @@ extension XBackgroundManager {
     @objc func app_applicationDidEnterBackground() {
         guard isAuthBackground else { return }
         // 打印日志
-        log("app_willEnterForegroundNotification")
+        log("app_applicationDidEnterBackground")
         // 开始后台任务
         var bgTask: UIBackgroundTaskIdentifier?
         bgTask = UIApplication.shared.beginBackgroundTask {

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "XBackgroundManager_Example.app"
+               BuildableName = "XBackgroundManager-Example.app"
                BlueprintName = "XBackgroundManager_Example"
                ReferencedContainer = "container:XBackgroundManager.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "XBackgroundManager_Example.app"
+            BuildableName = "XBackgroundManager-Example.app"
             BlueprintName = "XBackgroundManager_Example"
             ReferencedContainer = "container:XBackgroundManager.xcodeproj">
          </BuildableReference>
@@ -78,7 +78,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "XBackgroundManager_Example.app"
+            BuildableName = "XBackgroundManager-Example.app"
             BlueprintName = "XBackgroundManager_Example"
             ReferencedContainer = "container:XBackgroundManager.xcodeproj">
          </BuildableReference>
@@ -95,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "XBackgroundManager_Example.app"
+            BuildableName = "XBackgroundManager-Example.app"
             BlueprintName = "XBackgroundManager_Example"
             ReferencedContainer = "container:XBackgroundManager.xcodeproj">
          </BuildableReference>

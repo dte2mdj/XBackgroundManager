@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XBackgroundManager'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = '利用 CLLocation 定位实现 App 在进入后台后长久存活'
 
 # This description is used to generate tags and improve search results.
@@ -39,6 +39,6 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+   s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
